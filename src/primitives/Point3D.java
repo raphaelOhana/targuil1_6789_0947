@@ -26,6 +26,15 @@ public class Point3D {
         this._z = _z;
     }
 
+    @Override
+    public String toString() {
+        return "Point3D{" +
+                "_x=" + _x +
+                ", _y=" + _y +
+                ", _z=" + _z +
+                '}';
+    }
+
     public Point3D(Point3D p) {
         this._x = new Coordinate(p._x);
         this._y = new Coordinate(p._y);
